@@ -31,7 +31,6 @@ jobs:
             zlib1g-dev \
             libncurses5-dev \
             libncursesw5-dev \
-            libtinfo5 \
             libffi-dev \
             libssl-dev
 
@@ -49,4 +48,3 @@ jobs:
       with:
         name: package
         path: bin/*.apk
-        
