@@ -1,0 +1,19 @@
+[app]
+title = SpendWise
+package.name = spendwise
+package.domain = org.spendwise
+source.include_exts = py,png,jpg,kv,atlas
+source.include_dir = 
+source.exclude_exts = spec
+source.exclude_dirs = tests, bin
+version = 0.1
+requirements = python3,kivy
+orientation = portrait
+osx.python_version = 3
+osx.kivy_version = 1.9.1
+fullscreen = 0
+android.permissions = INTERNET
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+android.accept_sdk_license = True
