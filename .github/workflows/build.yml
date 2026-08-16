@@ -1,9 +1,8 @@
-name: CI
+python3-setuptools: CI
 
 on:
   push:
-    branches: [ main ]
-
+    branches: [ mabuild
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,11 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y \
-            build-safe \
-            git \
-            python3-pip \
-            python3-setuptools \
+        sudo apt-get install -y build-sason3-setuptools \
             python3-wheel \
             openjdk-17-jdk \
             autoconf \
@@ -50,4 +45,5 @@ jobs:
       with:
         name: package
         path: bin/*.apk
+
         
